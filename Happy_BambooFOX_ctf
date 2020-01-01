@@ -3,14 +3,16 @@ I prefer Jekyll for building my blog. Please try to read /home/web/flags/flag1.t
 [http://34.82.101.212:8001] (down)
 [http://59.124.168.42:8001]
 ```
+
 ```
 After scanning the website i found that we can use the exploit of "File path traversal" from two links:
 
-1st link: [http://34.82.101.212:8001/feed.xml]
+1st link: http://34.82.101.212:8001/feed.xml
 
-2nd link: [http://34.82.101.212:8001/hope/2019/12/19/welcome-to-jekyll.html]
+2nd link: http://34.82.101.212:8001/hope/2019/12/19/welcome-to-jekyll.html
 
 And then you just inject the path  ../../../../../../../../../../../../../../../../etc/passwd and you will get the content of file.
-And now we just changet [/etc/passwd] with [/home/web/flags/flag1.txt]
+And now we just changet /etc/passwd with /home/web/flags/flag1.txt
 Bingooo you get the flag. 
+
 ```
